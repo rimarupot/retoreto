@@ -1,0 +1,48 @@
+/* Reset and prevent scrolling to make it a true 'canvas' */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* No scrolling allowed! */
+    background-color: #f0f0f0;
+    
+    /* Arc Easel style dot grid background */
+    background-image: radial-gradient(#a0a0a0 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: sans-serif;
+}
+
+/* Base class for all floating elements */
+.drag-window {
+    position: absolute;
+    /* Adding a heavy drop shadow for that 3D maximalist pop */
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+/* Sizing for the Windows 98 boxes */
+.win98-window {
+    width: 350px;
+    max-width: 90vw;
+}
+
+/* Sizing and font enforcement for the NES boxes */
+.nes-window {
+    width: 400px;
+    max-width: 90vw;
+    background-color: white; /* NES containers need a solid background */
+}
+
+.nes-window p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* The area you click to drag the window */
+.drag-handle {
+    cursor: grab;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
