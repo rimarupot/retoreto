@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi's Chaotic Canvas</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="drag-window win98-window" id="window1" style="top: 10%; left: 5%;">
+        <div class="window">
+            <div class="title-bar drag-handle">
+                <div class="title-bar-text">README.TXT</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <p>So I wanted to do something on the computer.</p>
+                <p>Something other than my day job as a CSM. Something... fun?</p>
+                <p>Something that I couldn't do during college after learning coding. My god those days were fuun. I was and am bad at coding, but the end product after it is made, is good to look at.</p>
+                <p>It may be simple af, but I built it lol. Or, I gave the computer vision and directions to build it (whooooo very deep huh).</p>
+                <button>Ponder Deeply</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="drag-window nes-window" id="window2" style="top: 40%; left: 50%;">
+        <div class="nes-container with-title is-centered drag-handle">
+            <p class="title">Resume_Rebel.exe</p>
+            <p>Back in college it was simple html css, and now it's through LLMs, same same but different I guess.</p>
+            <p>Also I was playing around with the idea for a while. Initially I was thinking something good I can put in my resume for the upcoming job hunt.</p>
+            <p>Then I thought, why does it have to be "corporatey" to be put in the resume?</p>
+            <i class="nes-ash"></i>
+        </div>
+    </div>
+
+    <div class="drag-window win98-window" id="window3" style="top: 60%; left: 10%;">
+        <div class="window">
+            <div class="title-bar drag-handle">
+                <div class="title-bar-text">WARNING.exe</div>
+            </div>
+            <div class="window-body">
+                <div class="field-row" style="justify-content: center; margin-bottom: 10px;">
+                    <img src="https://icon.horse/icon/wikipedia.org" alt="Icon" width="32" height="32">
+                </div>
+                <p>You know what, I'm going to build/write something completely unhinged and still put in my resume anyway.</p>
+                <p>Mainly because it's funny, and the world can always use a little bit of fun.</p>
+                <p>- Best, Rishi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="drag-window nes-window" id="window4" style="top: 15%; left: 65%;">
+        <div class="nes-container is-rounded is-dark drag-handle">
+            <p>Drag me around!</p>
+            <button type="button" class="nes-btn is-primary" onclick="alert('Bloop!')">Click for Serotonin</button>
+            <br><br>
+            <i class="nes-mario"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
